@@ -1,0 +1,16 @@
+// use GDB as online compiler for running / executing C code snippets 
+#include <stdio.h>
+#include<conio.h>
+
+int main()
+{
+    printf("\"Hello World\"\n");
+    float num1, num2, num3;
+    printf("Enter 2 numbers here: \n");
+    scanf("%f %f", &num1, &num2);
+    num3 = num1 + num2; 
+    printf("\nsum of num1 %f and num2 %f is: %f", num1, num2, num3);
+    getch();
+    return 0;
+    
+}
