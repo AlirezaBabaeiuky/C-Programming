@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include <conio.h>
+#define PI 3.14
+#define METER_TO_FEET 3.28
+
+int main()
+{
+    printf("Hello World");
+    float x;
+    x = PI + 1;
+    printf("\n%f\n", x);
+    printf("\nenter the length in meters here: ");
+    float length;
+    scanf("%f", &length);
+    float lengthfeet;
+    lengthfeet = (float)(length* METER_TO_FEET);
+    printf("\nlength in feet is: %f", lengthfeet);
+    
+    printf("\nsize of x is: %f", sizeof(x));
+    printf("\nsize of x as double precision point is: %lf", sizeof(x));
+
+
+    return 0;
+}
