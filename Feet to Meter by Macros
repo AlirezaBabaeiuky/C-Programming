@@ -1,0 +1,20 @@
+#include <stdio.h>
+#define PI 3.14
+#define METER_TO_FEET 3.28
+
+int main()
+{
+    printf("Hello World");
+    float x;
+    x = PI + 1;
+    printf("\n%f\n", x);
+    printf("\nenter the length in meters here: ");
+    float length;
+    scanf("%f", &length);
+    float lengthfeet;
+    lengthfeet = (float)(length*METER_TO_FEET);
+    printf("\nlength in feet is: %f", lengthfeet);
+
+
+    return 0;
+}
