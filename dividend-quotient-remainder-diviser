@@ -1,0 +1,25 @@
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+// // Main Function Start
+int main()
+{
+    int a, b;
+    double c, d;
+    printf("Enter two numners here: ");
+    scanf("%d %d", &a, &b);
+    c = (a/b);
+    d = (a%b);
+    
+    printf("\n c as quotient is: %lf", c);
+    printf("\nremainder as d is: %lf", d);
+    
+    
+    
+
+    getch();
+    return 0;
+}
+// // Main Function End
