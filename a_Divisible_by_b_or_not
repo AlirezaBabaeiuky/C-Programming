@@ -1,0 +1,25 @@
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+
+// // Main Function Start
+int main()
+{
+    int a, b;
+    printf("enter an integer value of number a here => ");
+    scanf("%d", &a);
+    printf("\nenter an integer value of number b here => ");
+    scanf("%d", &b);
+    float c;
+    c = (float)(a/b);
+    if (a % b == 0) { 
+        printf("\na is divisible by b");
+    }
+    else {
+        printf("\na is NOT divisible by b");
+    }
+
+    getch();
+    return 0;
+}
+// // Main Function End
