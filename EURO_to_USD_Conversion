@@ -1,0 +1,20 @@
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+//% Define the MACROS 
+#define EUR_TO_USD 1.08 
+
+// // Main Function Start
+int main()
+{
+    float value_in_EURO, value_in_USD;
+    printf("\nEnter the value in Euros here: ");
+    scanf("%f", &value_in_EURO);
+    value_in_USD = value_in_EURO * EUR_TO_USD; 
+
+    printf("\nEqual value for the USD of the assigned Euro is: %f", value_in_USD);
+
+    getch();
+    return 0;
+}
+// // Main Function End
