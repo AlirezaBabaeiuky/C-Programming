@@ -1,0 +1,25 @@
+// // Trigonometric Progession Sequence 
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+
+// // Main Function Start
+int main()
+{
+    int a1, a, d, N; 
+    printf("enter the value of the initial number here: a1 =  ");
+    scanf("%d", &a1);
+    printf("\nenter the value of the increment/multiplication number here: d = ");
+    scanf("%d", &d);
+    printf("\nenter the final counter of the trigonometric sequence here: N = ");
+    scanf("%d", &N);
+    
+    a = a1 + pow(d, N-1);
+    
+        
+    printf("\nTrigonometric Sequence Result is a(n) = %d", a);
+
+    getch();
+    return 0;
+}
+// // Main Function End
