@@ -1,0 +1,25 @@
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+
+// // Main Function Start
+int main()
+{
+    char ch;
+    printf("enter an alphabet here => ");
+    scanf("%c", &ch); 
+    if (ch >= 'A' && ch <= 'Z') { 
+        printf("\nthe assigned alphabet is Uppercase Letter");
+    }
+    else if (ch >= 'a' && ch <= 'z') {
+        printf("\nthe entered alphabet (entry) is Lowercase Letter");
+    }
+    else { 
+        printf("\nNot a valid alphabet");
+    }
+
+
+    getch();
+    return 0;
+}
+// // Main Function End
