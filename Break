@@ -1,0 +1,23 @@
+
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+#include <stdlib.h>
+
+// // Main Function Start
+int main()
+{
+    for (int i = 0 ; i < 10 ; i++) { 
+        if (i == 5) { 
+            break;
+    // exit the loop when i == 5
+        } 
+        printf("%d\n", i);
+    }
+    printf("Loop Terminated\n");
+    printf("\n");
+    getch();
+    return 0;
+}
+// // Main Function End 
