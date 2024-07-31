@@ -1,0 +1,21 @@
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+#include <stdlib.h>
+
+// // Main Function Start
+int main()
+{
+    int a, b; 
+    printf("\nenter 2 values here for a and b in order: ");
+    scanf("%d %d", &a, &b);
+    int max = a > b ? a : b;
+    int min = a < b ? a : b;
+    printf("\nmaximum is: %d", max);
+    printf("\nminimum is: %d", min);
+    printf("\n");
+    getch();
+    return 0;
+}
+// // Main Function End 
