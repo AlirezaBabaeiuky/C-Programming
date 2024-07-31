@@ -1,0 +1,33 @@
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+// // Main Function Start
+int main()
+{
+    
+    int maxrow, maxcol;
+    printf("\nHow many rows => ");
+    scanf("%d", &maxrow);
+    printf("\nHow many columns => ");
+    scanf("%d", &maxcol);
+    puts("\n-------------------------\n");
+    for ( int row = 1 ; row <= maxrow ; row++) { 
+        for ( int col = 1 ; col <= maxcol ; col++) { // this is called Nested Loop
+        if (col <= row) { 
+            printf("* ");
+        } 
+        else {
+            printf("");
+        }
+        }
+        printf("* ");
+        printf("\n");
+       
+}
+    printf("\n");
+    getch();
+    return 0;
+}
+// // Main Function End
