@@ -1,0 +1,38 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+// // Write a menu driven program with the following options:
+// // a. Addition
+// // b. Subtraction
+// // c. Multiplication
+// // d. Division
+// // e. Exit
+
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+
+// // Main Function Start
+int main()
+{
+    char c;
+    char name[10];
+    printf("\nEnter a character here: ");
+    scanf("%c", &c);
+    printf("\nASCII value of the %c = %d", c, c);
+    printf("\nThe assigned character is: %c", c); 
+    printf("\nThe entered / assigned string is: %s", name);
+    scanf("%s", &name);
+    
+    printf("\n");
+    getch();
+    return 0;
+}
+// // Main Function End
