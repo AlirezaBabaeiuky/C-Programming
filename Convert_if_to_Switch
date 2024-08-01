@@ -1,0 +1,42 @@
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+// // Main Function Start
+int main()
+{
+        int var;
+        printf("enter a number between 1 to 3 here: ");
+        scanf("%d", &var);
+        if (var < 1 || var > 3) { 
+            printf("\nInvalid Input!!!");
+        } 
+        else if (var == 1) { 
+            printf("\nOne"); 
+        }
+        else if (var == 2) { 
+            printf("\nTwo");
+        }
+        else if (var == 3) { 
+            printf("\nThree");
+        } 
+        
+        // second approach with switch built-in funciton
+        switch(var) { 
+            case 1:
+            printf("\nOne");
+            break;
+            case 2: 
+            printf("\nTwo");
+            break;
+            case 3: 
+            printf("\nThree");
+            break;
+        }
+
+    printf("\n");
+    getch();
+    return 0;
+}
+// // Main Function End
