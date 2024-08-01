@@ -1,0 +1,23 @@
+// // Header Files
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+double areacircle ( double radius)
+{ 
+    return 22/7 * radius * radius;
+}
+
+// // Main Function Start
+int main()
+{
+    double radius, area;
+    printf("radius = ");
+    scanf("%lf", &radius);
+    area = areacircle (radius);
+    printf("\nArea of the circle with radius of: %f is: %f", radius, area);
+    
+    printf("\n");
+    getch();
+    return 0;
+}
