@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("\nEnter an integer number here: ");
+    scanf("%d", &n);
+    if (n != (int)n ) { 
+        printf("Invalid Input!!!");
+    }
+    else { 
+        printf("[");
+        for(int i = 1; i <= n ; i++) { 
+            printf("%d ", i);
+        }
+        printf("]");
+    }
+
+    return 0;
+}
