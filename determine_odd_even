@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+
+int main()
+{
+    printf("\nEnter an integer numner here: n = ");
+    int n;
+    scanf("%d", &n);
+    if (n == (int)n) { 
+        printf("\nn is acceptable. Good to move forward"); 
+    }
+  else { 
+      printf("\nInvalid Number!!! OOPS!!!"); 
+  } 
+  if ( n % 2 == 0) { 
+      int A = n;
+      printf("\nn is EVEN Number"); 
+      printf("\n[");
+      for ( int i = 1 ; i <= n ; i++) { 
+          printf("%d ", i);
+      }
+      printf("]");
+  } 
+  else if (n % 2 != 0) { 
+      int B = n;
+      printf("\nn is ODD Number");
+  } 
+    return 0;
+}
