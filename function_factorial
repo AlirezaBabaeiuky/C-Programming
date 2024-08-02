@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include<math.h>
+#include<conio.h>
+
+double myfac(int n) { 
+    double fac = 1;
+    for (int i = 2 ; i <= n ; i++) {
+        fac = fac * i;
+    }
+    return fac;
+}
+
+int main() { 
+    int n;
+    printf("\nEnter an integer number here: ");
+    scanf("%d", &n);
+    // sanity check on the number being an integer number 
+    if (n = (int)n) { 
+        printf("The assigned number is integer and all good to move to next step");
+    }
+    else { 
+        printf("OOPS!!! The assigned number is not integer and we cannot move forward");
+    }
+    int result;
+    result = myfac(n);
+    printf("\nResult is: %d", result);
+    return 0;
+}
