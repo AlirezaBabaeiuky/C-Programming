@@ -1,0 +1,24 @@
+#include <stdio.h> 
+ 
+#include <conio.h> 
+
+#define AN 3
+
+int main() { 
+    printf("\nEnter 3 Numbers here: ");
+    int n[AN], sum = 0;
+    for ( int i = 0 ; i < AN ; i++) { 
+        scanf("%d", &n[i]); 
+        sum = sum + n[i]; 
+    }
+    printf("\nSum of Numbers is: %d", sum);
+    
+    int prod = 1; 
+    for (int i = 0 ; i < AN ; i++) {
+        // if you start i with 1; then the compiler may say: smashed ...
+        prod = prod * n[i];
+    }
+    printf("\nProduct of all numbers is: %d", prod);
+    
+    return 0;
+} 
