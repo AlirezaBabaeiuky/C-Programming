@@ -12,6 +12,9 @@ int main() {
         sum = sum + n[i]; 
     }
     printf("\nSum of Numbers is: %d", sum);
+    double average; 
+    average = (float)sum / AN;
+    printf("\nAverage of the Numbers is: %lf", average);
     
     int prod = 1; 
     for (int i = 0 ; i < AN ; i++) {
@@ -22,3 +25,4 @@ int main() {
     
     return 0;
 } 
+
