@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+#include <conio.h> 
+
+// let's define a MACROS 
+#define ARRAYSIZE 4 
+
+
+int main()
+{
+    printf("Hello World\n");
+    int num[ARRAYSIZE], sum = 0;
+    printf("\nEnter 4 numbers here: ");
+    
+    for(int i=1; i<=ARRAYSIZE; i++) { 
+        scanf("%d", &num[i]); 
+        sum = sum + num[i];
+    }
+    printf("\nSum of Entered Numbers = %d", sum); 
+    
+    return 0;
+}
