@@ -21,6 +21,14 @@ for (int i = 0; i < ARRAY_SIZE ; i++) {
     printf("%d ", num[i]);
 }
 printf("]"); 
+
+int max = 0;
+for ( int i = 0; i < ARRAY_SIZE ; i++) {
+    if(num[i] > max) { 
+        max = num[i];
+    }
+}
+printf("\nMax is : %d", max); 
 //printf("\nLsit of Numbers = [%d ", num);
    // printf("\nLargest Number => %d", largest);
 
@@ -29,3 +37,4 @@ printf("]");
     return 0;
 }
 // // Main Function End
+
