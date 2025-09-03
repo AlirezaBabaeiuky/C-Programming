@@ -2,3 +2,7 @@
 C projects (package)
 scanf("%f %f %f", &L1, &L2, &L3); --- note not to use , comma in between the f meaning "%f, %f" is NOT correct 
 break should always be used in for loop or switch.
+return 0; is a language keyword that exits the current function. If it's in main(), it also triggers a proper program shutdown, including calling destructors for local objects.
+exit(0); is a system call that forces immediate termination of the process from anywhere in the program, bypassing standard function exits and object cleanup
+
+
