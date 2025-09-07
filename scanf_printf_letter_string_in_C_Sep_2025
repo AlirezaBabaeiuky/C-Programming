@@ -18,3 +18,12 @@ int main()
 
     return 0;
 }
+
+
+/*
+Your scanf for the single letter will likely be skipped due to a pending newline character left in the input buffer from the previous scanf("%s", ...) call. 
+Explanation:
+scanf("%s", name) reads the string you enter up to the first whitespace. When you press "Enter" to submit your name, scanf reads the name but leaves the newline character (\n) in the buffer.
+The next call, scanf("%c", &letter), does not skip leading whitespace by default. It immediately reads the leftover newline character from the buffer and proceeds without waiting for new user input.
+The program then prints the leftover character (the newline) and finishes.
+*/
