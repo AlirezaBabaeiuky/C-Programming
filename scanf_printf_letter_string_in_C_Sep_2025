@@ -27,3 +27,21 @@ scanf("%s", name) reads the string you enter up to the first whitespace. When yo
 The next call, scanf("%c", &letter), does not skip leading whitespace by default. It immediately reads the leftover newline character from the buffer and proceeds without waiting for new user input.
 The program then prints the leftover character (the newline) and finishes.
 */
+/* now compare to the syntax in C++:
+#include <iostream>
+using namespace std; 
+
+int main()
+{
+    string name;
+    char letter;
+    cout << "user name please: ";
+    cin >> name; 
+    cout << "\nuser gave name as: " << name << endl; 
+    cout << " user give us a letter please: "; 
+    cin >> letter; 
+    cout << "user gave us this letter: " << letter << endl; 
+
+    return 0;
+}
+*/ 
