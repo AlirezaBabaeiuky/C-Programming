@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=3, b=5; 
+    printf("%d %lf %lf %d", a/b, 3.0/5, 3/5.0, 3%5);
+    
+    char name[100];
+    printf("\nUser name here: ");
+    scanf("%s", name);
+    printf("\nUser's name is: %s", name);
+    char letter; 
+    printf("\nUser's first letter of the name here: ");
+    printf("\n"); 
+    scanf(" %c", &letter);
+    printf("\nUser gave us %c as the first letter of his/her name!", letter);
+
+
+    return 0;
+}
