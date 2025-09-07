@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("User name here please: "); 
+    char name[10];
+    scanf("%s", name); 
+    printf("\nsize of the name in characters is: %d", sizeof(name)); 
+    char letter; 
+    printf("\nenter a letter to get its ASCII code latter here: ");
+    scanf(" %c", &letter); // do not forget this space rigth before the %c in scanf otherwise in the butter sotry will happen and will skip this when compiling 
+    printf("ASCII code of %c is: %d", letter, letter); 
+    
+
+    return 0;
+}
