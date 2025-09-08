@@ -7,6 +7,11 @@ exit(0); is a system call that forces immediate termination of the process from 
 A variable declared in a block has a lifetime throughout this block, but disappears upon block exit.
 The first character of an identifier must be a letter or an underscore
 A variable in C is a named piece of memory which is used to store data and access it whenever required. It allows us to use the memory without having to memorize the exact memory address.
+Your understanding is incorrect. The core difference is that defining a variable allocates memory, while declaring it does not. Initialization is a separate action where a value is assigned. 
+Declaration: States a variable's name and type, telling the compiler it exists. An extern declaration is a classic example: extern int a;.
+Definition: A declaration that also allocates storage for the variable. In C, a simple int a; statement inside a function is both a declaration and a definition.
+Initialization: Assigning a value to a variable at the time of its definition, such as int a = 5;. 
+
 
 
 
