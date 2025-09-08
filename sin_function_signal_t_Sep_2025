@@ -1,26 +1,27 @@
 #include <stdio.h>
-#include <math.h>
+#include<math.h>
 
-// now time to define our pre-processor directive as macros that the compiler cimpiles befor the source code to be compiled
 #define PI 3.14
+
+int sinfcn() { 
+    int N = 101; // total number of opints in a signal
+    float dt = 0.1; // time step to make increments or to know the difference between two consecutive time points in a time vector;
+    float t[N];
+    float y_sin[N];
+    for(int i=0; i<N; i++) { 
+        t[i] = i*dt; 
+        y_sin[i] = sin(2*PI*t[i]);
+    }
+    printf("Printing the time vector and the sine function here: \n");
+    for (int i=0; i<N; i++) { 
+        printf("t: %f, y: %f\n", t[i], y_sin[i]);
+    }
+}
 
 int main()
 {
-    printf("prining values of sine and cosie: \n"); 
-    int num_steps = 101; 
-    float y[num_steps]; 
-    float t[num_steps];
-    float dt = 0.1;  
-    for (int i=0; i<100; i++) { 
-        t[i] = i * dt; 
-        y[i] = sin(2*PI*t[i]);
-    }
-    printf("printing the generated signals and numbers: \n");
-    for (int i=0; i<num_steps; i++) { 
-        printf("t: %f y: %f\n", t[i], y[i]);
-    }
-    
-    
+    // we need to call/invokde the function defined in the above here in the main source code part: 
+    sinfcn();
 
     return 0;
 }
