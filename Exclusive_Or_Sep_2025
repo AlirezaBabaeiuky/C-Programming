@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int c = 0;
+    if (!c) { 
+        printf("NOT C\n");
+    }
+    else { 
+        printf("C is non-zero\n");
+    }
+
+    return 0;
+}
