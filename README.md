@@ -5,5 +5,5 @@ break should always be used in for loop or switch.
 return 0; is a language keyword that exits the current function. If it's in main(), it also triggers a proper program shutdown, including calling destructors for local objects.
 exit(0); is a system call that forces immediate termination of the process from anywhere in the program, bypassing standard function exits and object cleanup
 A variable declared in a block has a lifetime throughout this block, but disappears upon block exit.
-
+The first character of an identifier must be a letter or an underscore
 
