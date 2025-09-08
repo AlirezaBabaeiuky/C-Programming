@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int n = 5;
+    while (n>0) { 
+        printf("I like this approach!!!\n");
+        n--;
+    }
+    
+
+    return 0;
+}
