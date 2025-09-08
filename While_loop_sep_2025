@@ -1,0 +1,35 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int N = 10; 
+    int arr[N];
+    printf("User please provide %d integer numbers here: ", N);
+    for (int i=0; i<N; i++) { 
+        scanf("%d", &arr[i]);
+    }
+    printf("\nUser gave the following numbers to form the array: \n");
+    for (int i=0; i<N; i++) { 
+        printf("%d ", arr[i]);
+    }
+    printf("Now let's use while iterative loop to print values only and only if they are smaller than 5\n");
+    // to use while loop instead of for loop for iteration do the following: 
+    int i=0; // first initialize the counter for the while loop 
+    while (i<N) { // loop while the counter is within the array bounds 
+        if (arr[i] <= 5 ) { 
+            printf("%d ", arr[i]);
+        }
+        i++; // do incrementation to the counter to move to the next element in the array 
+    }
+    
+            
+    return 0;
+}
