@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+// now time to define our pre-processor directive as macros that the compiler cimpiles befor the source code to be compiled
+#define PI 3.14
+
+int main()
+{
+    printf("prining values of sine and cosie: \n"); 
+    int num_steps = 101; 
+    float y[num_steps]; 
+    float t[num_steps];
+    float dt = 0.1;  
+    for (int i=0; i<100; i++) { 
+        t[i] = i * dt; 
+        y[i] = sin(2*PI*t[i]);
+    }
+    printf("printing the generated signals and numbers: \n");
+    for (int i=0; i<num_steps; i++) { 
+        printf("t: %f y: %f\n", t[i], y[i]);
+    }
+    
+    
+
+    return 0;
+}
