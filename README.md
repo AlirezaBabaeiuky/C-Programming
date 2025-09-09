@@ -24,6 +24,7 @@ int main()
 int c;
 answer: a
 The values and variables used with operators are called operands.
+pointer to int and pointer to double are different and this difference can affect both how much memory is pointed at – for example an int may be in 4 bytes and a double may be in 8 bytes;  and interpretation  -namely how the bits are interpreted.  
 
 
 
