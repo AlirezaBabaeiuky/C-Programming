@@ -12,6 +12,7 @@ Declaration: States a variable's name and type, telling the compiler it exists. 
 Definition: A declaration that also allocates storage for the variable. In C, a simple int a; statement inside a function is both a declaration and a definition.
 Initialization: Assigning a value to a variable at the time of its definition, such as int a = 5;. 
 The key point in using a local to a function static variable is: its value is retained upon function exit. 
+Recursive fibonacci shows one pitfall in using it versus an iterative calculation: That is function call is expensive in both time and space
 
 
 
