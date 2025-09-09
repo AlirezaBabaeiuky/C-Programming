@@ -13,6 +13,7 @@ Definition: A declaration that also allocates storage for the variable. In C, a 
 Initialization: Assigning a value to a variable at the time of its definition, such as int a = 5;. 
 The key point in using a local to a function static variable is: its value is retained upon function exit. 
 Recursive fibonacci shows one pitfall in using it versus an iterative calculation: That is function call is expensive in both time and space
+Which keyword tells the compiler to look for a variable’s definition elsewhere? extern 
 
 
 
