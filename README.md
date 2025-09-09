@@ -23,7 +23,7 @@ int main()
 }
 int c;
 answer: a
-
+The values and variables used with operators are called operands.
 
 
 
