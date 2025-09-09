@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int N;
+    printf("Enter an integer here: ");
+    scanf("%d", &N);
+    printf("\n");
+    int NS = 0; 
+    for (int i=1; i<=N; i++) { 
+        NS = NS + i;
+    }
+    printf("%d ", NS);
+    
+
+    return 0;
+}
