@@ -29,6 +29,8 @@ When using a reference declaration in a function header to simulate call-by-refe
 reason why we use & (ampersand) when getting an input from user is to store the value if the variable in the memory address. To store the input at the variable’s memory address.
 Recap: all JUMP statements should be used within iterative (for) loop. break, continue, goto, return. --- break is a control statement that immediately jumps out of the loop (forces th eprogram to terminate the loop/iteration). continue is the opposite and it forces the program to do the next iteration inside the loop and skip whatever following the continue.
 jump statements are all loop control statements. and except return, all jump statements need conditional statement as well the iterative loop. Function declaration VS definition: declaration tells the compiler about function name and return type. Definition tells the full code or logc in a function and includes the full implementation.     
+Array declaration: When we declare an array in C, the compiler allocates the memory block of the specified size to the array name.
+Recapp: format specifier for pointer is: p meaning: %p
 
 
  
