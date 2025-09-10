@@ -28,7 +28,7 @@ pointer to int and pointer to double are different and this difference can affec
 When using a reference declaration in a function header to simulate call-by-reference, it means the referenced variable in the calling environment can be changed
 reason why we use & (ampersand) when getting an input from user is to store the value if the variable in the memory address. To store the input at the variable’s memory address.
 Recap: all JUMP statements should be used within iterative (for) loop. break, continue, goto, return. --- break is a control statement that immediately jumps out of the loop (forces th eprogram to terminate the loop/iteration). continue is the opposite and it forces the program to do the next iteration inside the loop and skip whatever following the continue.
-jump statements are all loop control statements. 
+jump statements are all loop control statements. and except return, all jump statements need conditional statement as well the iterative loop.  
 
 
  
