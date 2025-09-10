@@ -31,7 +31,8 @@ Recap: all JUMP statements should be used within iterative (for) loop. break, co
 jump statements are all loop control statements. and except return, all jump statements need conditional statement as well the iterative loop. Function declaration VS definition: declaration tells the compiler about function name and return type. Definition tells the full code or logc in a function and includes the full implementation.     
 Array declaration: When we declare an array in C, the compiler allocates the memory block of the specified size to the array name.
 Recapp: format specifier for pointer is: p meaning: %p
-We have to first dereference the pointer to access the value present at the memory address. This is done with the help of dereferencing operator(*) (same operator used in declaration).
+We have to first dereference the pointer to access the value present at the memory address. This is done with the help of dereferencing operator(*) (same operator used in declaration). Yes, arrays are always passed to functions as pointers in C. The compiler automatically converts the array name arr into a pointer to its first element when the printArray(arr, n) function is called
+
 
 
  
