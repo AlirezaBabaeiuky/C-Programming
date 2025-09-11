@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.14
+
+int main()
+{
+    float t[100];
+    float y[100];
+    float dt = 0.1; // time step 
+    
+    for(int i=0; i<100; i++) { 
+        t[i] = t[i] + dt;
+        y[i] = sin(2*PI*t[i]);
+    }
+    
+    printf("\nprinting values for time and y vectors: \n");
+    
+    for (int i=0; i<100; i++) { 
+        printf("t: %f, y: %f\n", t[i], y[i]);
+    }
+
+    return 0;
+}
