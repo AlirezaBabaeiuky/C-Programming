@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.14
+
+int main()
+{
+    int size = 10;
+    float dt = 0.1; 
+    float y[size];
+    float t[size]; 
+    for (int i=0; i<size; i++) { 
+        t[i] = i*dt; 
+        y[i] = sin(2*PI*t[i]);
+    }
+    
+    float min = y[0];
+    float max = y[0];
+    
+    for(int i=0; i<size; i++) { 
+        printf("t=%f, y=%f\n", t[i], y[i]);
+    }
+    
+    for (int i=0; i<size; i++) { 
+        if (y[i] < min) { 
+            min = y[i];
+        }
+    }
+    for (int i=0; i<size; i++) { 
+        if (y[i] > max) { 
+            max = y[i];
+        }
+    }
+    printf("\n");
+    printf("minimum is: %f and maximum is: %f\n", min, max);
+    
+    for (int i=0; i<size; i++) { 
+        if (y[i]>0){ 
+            printf("%f\n", y[i]);
+        }
+        continue;
+    }
+
+    return 0;
+}
