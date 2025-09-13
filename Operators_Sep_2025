@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int a = 5; 
+    int b = 3; 
+    float c, d, e, f, g;
+    c = a/b;
+    d = (float)a/b;
+    e = a % b; 
+    printf("%f %f %f ", c, d, e);
+  
+    return 0;
+}
