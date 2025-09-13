@@ -31,3 +31,25 @@ int main() {
     
     return 0;
 }
+
+/*
+#include <stdio.h>
+# include <math.h>
+
+int factorial (int N) { 
+    int fac = 1;
+    for (int i=1; i<=N; i++) { 
+        fac = fac*i;
+    }
+    printf("%d factorial is: %d", N, fac);
+}
+
+int main()
+{
+    int X = 5; 
+    factorial(X); 
+
+    return 0;
+}
+No, that code is invalid in C. If a function is declared to return a type other than void, it must explicitly use a return statement to send a value back to the caller.
+*/   
