@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int kp=100, ki=90, kd=1; // controller parameters 
+    float m=1, c=0.1, k=100; // plany dynamics 
+    
+    int ref = 1; // reference or SPG signal 
+    
+    float dt = 0.1; // time step 
+    
+    float e_prev = 0; 
+    float pos = 0; 
+    float vel = 0; 
+    
+    for (int i=0; i<100; i++) {
+        float e = ref - pos; 
+        float integral = integral + e*dt; 
+        float derivative = (e - e_prev) / dt;
+        
+        float ctrl = kp*e + ki*integral + kd*derivative; 
+        
+        float acc = (ctrl - k*pos - c*vel) / m;
+        vel = vel + acc*dt;
+        pos = pos + vel*dt;
+        
+        e_prev = e; // store the most recent error in the loop in previous error 
+        
+        printf("erro: %f, pos: %f\n", e, pos);
+    }
+
+    return 0;
+}
