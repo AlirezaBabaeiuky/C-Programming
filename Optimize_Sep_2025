@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+
+#define SIZE 100
+#define RANGE 10.0
+
+double f(double x) {
+    return sin(x) - tanh(x) + cos(exp(x)); 
+}
+
+int main() {
+    double x_vals[SIZE];
+    double y_vals[SIZE];
+    double step = RANGE / SIZE;
+    double max_y = f(0.0);
+    double max_x = 0.0;
+    
+    // Store all calculated values
+    for (int i = 0; i < SIZE; i++) {
+        x_vals[i] = i * step;
+        y_vals[i] = f(x_vals[i]);
+        
+        // Find maximum value
+        if (y_vals[i] > max_y) {
+            max_y = y_vals[i];
+            max_x = x_vals[i];
+        }
+    }
+
+    printf("Maximum value is: %.6f at x = %.6f\n", max_y, max_x);
+    
+    return 0;
+}
