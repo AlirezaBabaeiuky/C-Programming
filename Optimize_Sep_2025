@@ -41,7 +41,7 @@ int factorial (int N) {
     for (int i=1; i<=N; i++) { 
         fac = fac*i;
     }
-    printf("%d factorial is: %d", N, fac);
+    printf("%d factorial is: %d", N, fac); // or you could say return type os void and use return then use printf in the main block of the code  
 }
 
 int main()
