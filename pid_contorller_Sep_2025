@@ -1,32 +1,42 @@
 #include <stdio.h>
 
-int main()
-{
-    int kp=100, ki=90, kd=1; // controller parameters 
-    float m=1, c=0.1, k=100; // plany dynamics 
+int main() {
+    float kp = 100.0, ki = 90.0, kd = 1.0; 
+    float m = 1.0, c = 0.1, k = 100.0; 
+    float ref = 1.0;
+    float dt = 0.1;
+    int size = 100;
     
-    int ref = 1; // reference or SPG signal 
-    
-    float dt = 0.1; // time step 
-    
-    float e_prev = 0; 
-    float pos = 0; 
-    float vel = 0; 
-    
-    for (int i=0; i<100; i++) {
-        float e = ref - pos; 
-        float integral = integral + e*dt; 
-        float derivative = (e - e_prev) / dt;
+    // Declare arrays to store history
+    float e[size];
+    float integral[size];
+    float derivative[size];
+    float ctrl[size];
+    float pos[size];
+    float vel[size];
+
+    // Initial conditions
+    pos[0] = 0.0;
+    vel[0] = 0.0;
+    e[0] = ref - pos[0];
+    integral[0] = e[0] * dt;
+    derivative[0] = 0.0;
+    ctrl[0] = kp * e[0];
+
+    // Loop from the second step (index 1)
+    for (int i = 1; i < size; i++) {
+        // PID calculation
+        e[i] = ref - pos[i-1];
+        integral[i] = integral[i-1] + e[i] * dt;
+        derivative[i] = (e[i] - e[i-1]) / dt;
+        ctrl[i] = kp * e[i] + ki * integral[i] + kd * derivative[i];
         
-        float ctrl = kp*e + ki*integral + kd*derivative; 
+        // Plant dynamics
+        float acc = (ctrl[i] - k * pos[i-1] - c * vel[i-1]) / m;
+        vel[i] = vel[i-1] + acc * dt;
+        pos[i] = pos[i-1] + vel[i] * dt;
         
-        float acc = (ctrl - k*pos - c*vel) / m;
-        vel = vel + acc*dt;
-        pos = pos + vel*dt;
-        
-        e_prev = e; // store the most recent error in the loop in previous error 
-        
-        printf("erro: %f, pos: %f\n", e, pos);
+        printf("step: %d, error: %f, pos: %f\n", i, e[i], pos[i]);
     }
 
     return 0;
